@@ -145,7 +145,7 @@ public abstract class Entity {
      */
     public static BufferedImage upload(String name) {
         try {
-            InputStream is = Entity.class.getResourceAsStream("/resources/" + name);
+            InputStream is = Entity.class.getResourceAsStream("/images/" + name);
             if (is == null) {
                 System.err.println("Imagen no encontrada: " + name);
                 return null;
